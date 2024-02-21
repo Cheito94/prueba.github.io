@@ -1,0 +1,30 @@
+//Ver usuarios
+GET http://localhost:3000/usuarios
+
+//Agregar usuario
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+  "nombre": "Yesenia",
+  "apellido": "Fuentes",
+  "ci": "0555555555",
+  "ocupacion": "Tecnologa",
+  "direccion": "Lasso",
+  "telefono": "0998765432"
+}
+
+//Actualizar usuario
+PUT http://localhost:3000/usuarios/1122334455
+Content-Type: application/json
+
+{
+  "nombre": "Fernando",
+  "apellido": "NuevoApellido",
+  "ocupacion": "NuevaOcupacion",
+  "direccion": "NuevaDireccion",
+  "telefono": "1234567890"
+}
+
+//Eliminar usuario
+DELETE http://localhost:3000/usuarios/1122334455
